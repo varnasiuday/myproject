@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["phn"].value;
+  if (x == "") {
+    alert("phone number and interests must be filled out");
+    return false;
+  }
+</script>
+<body>
+<h3>Interests</h3>
+<form  name="myForm" action="/action_page.php" onsubmit="rerturn validateForm()" method="post">
+  <input type="checkbox" id="chess" name="playing chess" value="playing chess">
+  <label for="chess">playing chess</label><br>
+  <input type="checkbox" id="cricket" name="playing cricket" value="playing cricket">
+  <label for="cricket">playing cricket</label><br>
+  <input type="checkbox" id="carroms" name="playing carroms" value="playing carroms">
+  <label for="carroms">playing carroms</label><br><br>
+   phone number: <input type="number" name="phn">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</head>
+</html>
